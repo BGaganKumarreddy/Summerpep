@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gagan Kumar Reddy | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Brahmadevuni Gagan Kumar Reddy – Full Stack Developer skilled in React, Node.js, MongoDB, Python and AI tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───── NAV ───── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">GKR<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ───── HERO ───── -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-inner container">
+      <!-- LEFT: Text -->
+      <div class="hero-text">
+        <p class="hero-greeting">
+          <span class="greeting-line"></span> Hello, I'm
+        </p>
+        <h1 class="hero-name">
+          Brahmadevuni<br />
+          <span class="gradient-text">Gagan Kumar Reddy</span>
+        </h1>
+        <p class="hero-role">
+          <span class="role-badge">Full Stack Developer</span>
+          <span class="role-sep">&amp;</span>
+          <span class="role-badge">AI Enthusiast</span>
+        </p>
+        <p class="hero-tagline">Building scalable web applications with modern tech stacks &amp; AI-powered solutions. From MERN stack apps to multi-agent AI systems.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="view-work-btn">View My Work</a>
+          <a href="#contact" class="btn btn-outline" id="contact-btn">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/gagan-kumar-reddy/" target="_blank" rel="noopener" id="linkedin-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/BGaganKumarreddy" target="_blank" rel="noopener" id="github-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="mailto:gagankumarreddy.b@gmail.com" id="email-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.910 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Visual Card -->
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hcard-avatar">
+            <div class="hcard-initials">GKR</div>
+            <div class="hcard-ring"></div>
+            <div class="hcard-ring r2"></div>
+          </div>
+          <h2 class="hcard-name">Gagan Kumar Reddy</h2>
+          <p class="hcard-title">Full Stack Developer</p>
+          <div class="hcard-divider"></div>
+          <div class="hcard-stats">
+            <div class="hcard-stat">
+              <span class="hstat-num">4+</span>
+              <span class="hstat-label">Projects</span>
+            </div>
+            <div class="hcard-stat">
+              <span class="hstat-num">1</span>
+              <span class="hstat-label">Internship</span>
+            </div>
+            <div class="hcard-stat">
+              <span class="hstat-num">6.90</span>
+              <span class="hstat-label">CGPA</span>
+            </div>
+          </div>
+          <div class="hcard-skills">
+            <span>React.js</span><span>Node.js</span><span>Python</span>
+            <span>MongoDB</span><span>Docker</span><span>AI/ML</span>
+          </div>
+          <div class="hcard-available">
+            <span class="pulse-dot"></span> Open to Opportunities
+          </div>
+        </div>
+        <!-- floating badges -->
+        <div class="float-badge fb-1">🏆 Rank &lt;1k / 52k+</div>
+        <div class="float-badge fb-2">🌐 Codeforces Global Rank &lt;1k</div>
+        <div class="float-badge fb-3">🎓 LPU — B.Tech CSE</div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+
+  <!-- ───── ABOUT ───── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrapper">
+          <div class="about-avatar">
+            <div class="avatar-initials">GKR</div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring ring-2"></div>
+          </div>
+          <div class="about-badges">
+            <span class="badge">🚀 Full Stack Dev</span>
+            <span class="badge">🤖 AI Enthusiast</span>
+            <span class="badge">💡 Problem Solver</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a passionate <strong>Full Stack Developer</strong> and B.Tech Computer Science student at <strong>Lovely Professional University</strong>, Punjab. I build scalable web applications using modern tech stacks and love integrating AI into real-world products.</p>
+          <p>From developing AI-powered resume platforms to building multi-agent debugging systems, I thrive at the intersection of <strong>web development</strong> and <strong>artificial intelligence</strong>.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">52k+</span>
+              <span class="stat-label">Hackathon Peers</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">6.90</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+          </div>
+          <div class="about-contacts">
+            <a href="mailto:gagankumarreddy.b@gmail.com" class="contact-pill" id="email-pill">📧 gagankumarreddy.b@gmail.com</a>
+            <a href="tel:+919000062869" class="contact-pill" id="phone-pill">📱 +91-9000062869</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SKILLS ───── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">My Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">⚡</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Python</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🧩</span>
+            <h3>Frameworks</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">React.js</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Express.js</span>
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🛠️</span>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">FastAPI</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🤝</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill soft">Problem Solving</span>
+            <span class="skill-pill soft">Team Collaboration</span>
+            <span class="skill-pill soft">Adaptability</span>
+            <span class="skill-pill soft">Time Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── EXPERIENCE ───── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Experience</span>
+        <h2 class="section-title">Internship</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Web Development Intern</h3>
+                <p class="exp-company">Elevate Labs</p>
+              </div>
+              <span class="exp-date">Jan 2026 – Apr 2026</span>
+            </div>
+            <ul class="exp-points">
+              <li>Designed and developed <strong>SmartCV</strong>, a full-stack AI-powered resume optimization platform using the MERN stack.</li>
+              <li>Integrated the <strong>Gemini API</strong> to provide real-time ATS-friendly resume analysis, keyword optimization, and content suggestions.</li>
+              <li>Developed secure <strong>RESTful APIs</strong> and MongoDB schemas for efficient resume management and AI-driven recommendations.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Gemini API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PROJECTS ───── -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card glass-card" id="project-openenv">
+          <div class="project-header">
+            <span class="project-number">01</span>
+            <span class="project-date">Apr 2026 – May 2026</span>
+          </div>
+          <h3 class="project-title">OpenEnv Data Pipeline Debugger</h3>
+          <p class="project-desc">Responsive frontend &amp; Replay Dashboard for the OpenEnv Data Pipeline Debugger. Worked on a multi-agent AI system (Inspector → Fixer → Validator) to improve ETL bug repair accuracy.</p>
+          <ul class="project-points">
+            <li>Developed responsive React frontend and Replay Dashboard using Tailwind CSS.</li>
+            <li>Debugged and optimized FastAPI backend workflows, improving API reliability.</li>
+            <li>Contributed to multi-agent AI pipeline for fixing duplicate AI-generated responses.</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">OpenAI SDK</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">HuggingFace</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-card" id="project-syncsphere">
+          <div class="project-header">
+            <span class="project-number">02</span>
+            <span class="project-date">Jan 2026 – Mar 2026</span>
+          </div>
+          <h3 class="project-title">SyncSphere – Project Management Website</h3>
+          <p class="project-desc">Collaborative project management platform with task allocation, deadline tracking, and status monitoring features for efficient team collaboration.</p>
+          <ul class="project-points">
+            <li>Implemented JWT-based authentication and role-based access control.</li>
+            <li>Structured MongoDB schemas for secure project and task management.</li>
+            <li>Built responsive frontend with integrated backend APIs for seamless workflows.</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">JWT</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass-card" id="project-stockmate">
+          <div class="project-header">
+            <span class="project-number">03</span>
+            <span class="project-date">Sep 2025 – Oct 2025</span>
+          </div>
+          <h3 class="project-title">Stock Mate – Smart Inventory Management</h3>
+          <p class="project-desc">Full-stack inventory management system with real-time stock tracking, supplier management, and interactive data visualization dashboards.</p>
+          <ul class="project-points">
+            <li>Built secure CRUD APIs with JWT authentication and optimized DB queries.</li>
+            <li>Designed responsive dashboards with interactive data visualizations.</li>
+            <li>Implemented real-time stock tracking and supplier management features.</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Tailwind CSS</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card glass-card" id="project-smartcv">
+          <div class="project-header">
+            <span class="project-number">04</span>
+            <span class="project-date">Jan 2026 – Apr 2026</span>
+          </div>
+          <h3 class="project-title">SmartCV – AI Resume Optimizer</h3>
+          <p class="project-desc">AI-powered resume optimization platform using the MERN stack with Gemini API integration for real-time ATS analysis and content improvement suggestions.</p>
+          <ul class="project-points">
+            <li>Full-stack MERN application with Gemini API for ATS-friendly analysis.</li>
+            <li>Keyword optimization and content suggestion engine.</li>
+            <li>Secure RESTful APIs and MongoDB schemas for resume management.</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Gemini API</span>
+            <span class="tech-tag">Tailwind CSS</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── ACHIEVEMENTS ───── -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Achievements</span>
+        <h2 class="section-title">Highlights</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card" id="achievement-hackathon">
+          <span class="achievement-icon">🏆</span>
+          <div class="achievement-info">
+            <h3>Rank Under 1k</h3>
+            <p>Among 52k+ participants in <strong>OpenEnv Hackathon</strong> – Final Round</p>
+            <span class="achievement-date">May 2026</span>
+          </div>
+        </div>
+        <div class="achievement-card glass-card" id="achievement-codeforces">
+          <span class="achievement-icon">🌐</span>
+          <div class="achievement-info">
+            <h3>Global Rank Under 1k</h3>
+            <p>Among 15k+ participants in <strong>Codeforces Round 1063</strong> – Div. 2</p>
+            <span class="achievement-date">Nov 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="section-header" style="margin-top: 3rem;">
+        <span class="section-tag">06 — Certifications</span>
+        <h2 class="section-title">Certificates</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card" id="cert-chatgpt">
+          <span class="cert-icon">📜</span>
+          <div>
+            <h4>ChatGPT-4 Prompt Engineering</h4>
+            <p>Infosys Springboard</p>
+            <span class="cert-date">Jun 2025</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card" id="cert-genai">
+          <span class="cert-icon">📜</span>
+          <div>
+            <h4>Master Generative AI &amp; Tools</h4>
+            <p>ChatGPT &amp; more</p>
+            <span class="cert-date">Jun 2025</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card" id="cert-nocode">
+          <span class="cert-icon">📜</span>
+          <div>
+            <h4>Build Generative AI Apps (No-Code)</h4>
+            <p>AI Solutions Platform</p>
+            <span class="cert-date">Jun 2025</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card" id="cert-theory">
+          <span class="cert-icon">📜</span>
+          <div>
+            <h4>Computational Theory</h4>
+            <p>Language Principle &amp; Finite Automata</p>
+            <span class="cert-date">Jun 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── EDUCATION ───── -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 — Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card glass-card">
+            <div class="edu-header">
+              <div>
+                <h3>B.Tech – Computer Science &amp; Engineering</h3>
+                <p class="edu-institution">Lovely Professional University, Punjab</p>
+              </div>
+              <div class="edu-right">
+                <span class="edu-score">CGPA: 6.90</span>
+                <span class="edu-date">Aug 2023 – Present</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card glass-card">
+            <div class="edu-header">
+              <div>
+                <h3>Intermediate (12th)</h3>
+                <p class="edu-institution">Vowel Junior College, Nellore, Andhra Pradesh</p>
+              </div>
+              <div class="edu-right">
+                <span class="edu-score">87.0%</span>
+                <span class="edu-date">Apr 2021 – Mar 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card glass-card">
+            <div class="edu-header">
+              <div>
+                <h3>Matriculation (10th)</h3>
+                <p class="edu-institution">Vowel Learning Institution, Nellore, Andhra Pradesh</p>
+              </div>
+              <div class="edu-right">
+                <span class="edu-score">93.7%</span>
+                <span class="edu-date">May 2020 – Apr 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">08 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:gagankumarreddy.b@gmail.com" class="contact-card glass-card" id="contact-email">
+          <span class="contact-card-icon">📧</span>
+          <h3>Email</h3>
+          <p>gagankumarreddy.b@gmail.com</p>
+        </a>
+        <a href="tel:+919000062869" class="contact-card glass-card" id="contact-phone">
+          <span class="contact-card-icon">📱</span>
+          <h3>Phone</h3>
+          <p>+91-9000062869</p>
+        </a>
+        <a href="https://www.linkedin.com/in/gagan-kumar-reddy/" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-linkedin">
+          <span class="contact-card-icon">💼</span>
+          <h3>LinkedIn</h3>
+          <p>gagan-kumar-reddy</p>
+        </a>
+        <a href="https://github.com/BGaganKumarreddy" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-github">
+          <span class="contact-card-icon">🐙</span>
+          <h3>GitHub</h3>
+          <p>BGaganKumarreddy</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">GKR<span class="dot">.</span></p>
+      <p class="footer-copy">&copy; 2026 Brahmadevuni Gagan Kumar Reddy. All rights reserved.</p>
+      <p class="footer-made">Crafted with ❤️ &amp; modern web technologies</p>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -60px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll(
+      '.about-grid, .skill-category, .timeline-item, .project-card, .achievement-card, .cert-card, .edu-item, .contact-card'
+    ).forEach(el => {
+      el.classList.add('animate-on-scroll');
+      observer.observe(el);
+    });
+
+    // Active nav link highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 100) current = section.getAttribute('id');
+      });
+      navItems.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+  </script>
+</body>
+</html>
